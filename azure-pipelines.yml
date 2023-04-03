@@ -16,16 +16,15 @@ steps:
 - script: |
     npm install --save-dev eslint
     touch .eslintrc.js
-    echo "// .eslintrc.js example
-module.exports = {
-  "env": {
-      "browser": true,
-      "es2021": true
-  },
-  "extends": "eslint:recommended",
-  "parserOptions": {
-      "ecmaVersion": "latest",
-      "sourceType": "module"
+    echo "module.exports = { /n
+  "env": { /n
+      "browser": true, /n
+      "es2021": true /n
+      }, /n
+   "extends": "eslint:recommended", /n
+  "parserOptions": { /n
+      "ecmaVersion": "latest", /n
+      "sourceType": "module" /n
   },
 }" >> ./eslintrc.js
   displayName: 'Run a multi-line script'
