@@ -15,4 +15,5 @@ steps:
 
 - script: |
     npm install eslint
+    npm init @eslint/config -- --config semistandard
   displayName: 'Run a multi-line script'
