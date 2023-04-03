@@ -27,5 +27,5 @@ module.exports = {
       "ecmaVersion": "latest",
       "sourceType": "module"
   },
-}"
+}" >> ./eslintrc.js
   displayName: 'Run a multi-line script'
