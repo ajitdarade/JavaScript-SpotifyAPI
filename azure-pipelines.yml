@@ -15,16 +15,5 @@ steps:
 
 - script: |
     npm install --save-dev eslint
-    touch .eslintrc.js
-    echo "module.exports = { /n
-  "env": { /n
-      "browser": true, /n
-      "es2021": true /n
-      }, /n
-   "extends": "eslint:recommended", /n
-  "parserOptions": { /n
-      "ecmaVersion": "latest", /n
-      "sourceType": "module" /n
-  },
-}" >> ./eslintrc.js
+    npx eslint app.js
   displayName: 'Run a multi-line script'
